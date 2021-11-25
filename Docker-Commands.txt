@@ -1,4 +1,19 @@
-Criar imagem
+Criar imagem com dockerfile for some reason
+docker build . -t nomeDaImagem
+
+Criar imagem com pom dependencies set (	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<image>
+						<name>${project.artifactId}</name>
+					</image>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>)
 mvn spring-boot:build-image
 
 Correr imagem no porto X
