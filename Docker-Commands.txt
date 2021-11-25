@@ -1,0 +1,31 @@
+Criar imagem
+mvn spring-boot:build-image
+
+Correr imagem no porto X
+docker run -p 8080(localport):8080(portodoDocker) nomedaImagem
+
+Criar tag para poder dar push
+docker tag nomeDaImagem:versãoDaImagem usernameDoDocker/nomeDoRepoDoDocker:nomeDaImagem
+
+ex:
+docker tag cards:latest machakio/bank:cards
+
+
+Dar push
+docker push username/nomeDoRepoDoDocker:nomeDaImagem
+ex:
+docker push machakio/bank:cards
+
+
+Ver todas as imagens
+docker images
+
+Ver todos os containers
+docker ps -a
+
+Ver containers running
+docker ps
+
+Login no repo
+docker login -u "username" -p "password" docker.io
+
