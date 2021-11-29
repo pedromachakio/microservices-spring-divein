@@ -44,3 +44,12 @@ docker ps
 Login no repo
 docker login -u "username" -p "password" docker.io
 
+Correr as imagens todas definidas no yml de uma só vez(requires docker-compose.yml file in the folder to be run)
+docker-compose up
+
+Stop running containers
+docker-compose stop
+
+Stop containers and delete everything
+docker-compose down
+
