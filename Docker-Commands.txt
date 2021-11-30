@@ -35,6 +35,9 @@ docker push machakio/bank:cards
 Ver todas as imagens
 docker images
 
+Remove image
+docker image rm idDaImagem
+
 Ver todos os containers
 docker ps -a
 
@@ -52,4 +55,3 @@ docker-compose stop
 
 Stop containers and delete everything
 docker-compose down
-
